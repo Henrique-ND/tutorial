@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
+const imagem_index = "https://docs.astro.build/assets/full-logo-light.png";
 ---
 <BaseLayout pageTitle={pageTitle}>
 
@@ -10,7 +11,7 @@ const pageTitle = "Home Page";
 
   <p><strong>Isso é um paragrafo dentro do index.astro.</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, eos quibusdam quod, doloremque hic ex aliquid dolorem nemo eum, nulla eveniet distinctio. Beatae molestias explicabo harum eius repellat doloremque tempora.</p>
 
-  <img src="https://docs.astro.build/assets/full-logo-light.png" alt="teste de imagem no astro" width="300" style="background-color: black; padding: 10px;">
+  <img src={imagem_index} alt="teste de imagem no astro" width="300" style="background-color: black; padding: 10px;">
 
   <p><strong>Isso é um paragrafo dentro do index.astro.</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, eos quibusdam quod, doloremque hic ex aliquid dolorem nemo eum, nulla eveniet distinctio. Beatae molestias explicabo harum eius repellat doloremque tempora.</p>
 
