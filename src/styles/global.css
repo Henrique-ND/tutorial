@@ -1,13 +1,23 @@
+/* ---------- GLOBAL ---------- */
+:root {
+  --background-color: #f1f5f9;
+  --primary-color: #4c1d95;
+  --secundary-color: #000000;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --border-radius: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+
 html {
-    background-color: #f1f5f9;
+    background-color: var(--background-color);
     font-family: sans-serif;
-  }
+}
   
 body {
     margin: 0 auto;
@@ -21,8 +31,9 @@ h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
   }
+/* ---------- GLOBAL ---------- */
 
-/* nav styles */
+/* ---------- MENU HAMBURGUER ---------- */
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
@@ -35,23 +46,22 @@ h1 {
   margin-bottom: 10px;
   background-color: #000;
 }
+/* ---------- MENU HAMBURGUER ---------- */
 
+/* ---------- NAV LINKS ---------- */
 .nav-links {
   width: 100%;
   top: 5rem;
-  /*left: 48px;*/
-  background-color: #ff9776;
   display: none;
-  margin: 0;
 }
 
 .nav-links a {
   background-color: #4c1d95;   
   color: #fff;
-  border-radius: 50px;
+  border-radius: var(--border-radius);
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 5px 0;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -85,3 +95,25 @@ h1 {
     display: none;
   }
 }
+
+/* ---------- SOCIAL ---------- */
+.social {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+}
+
+.social:hover {
+  background-color: blue;
+}
+/* ---------- SOCIAL ---------- */
+
+/* ---------- FOOTER ---------- */
+footer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+/* ---------- FOOTER ---------- */
